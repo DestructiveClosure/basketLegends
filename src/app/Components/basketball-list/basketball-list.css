@@ -1,0 +1,25 @@
+
+
+.basket-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #88ed;
+    border-bottom: 2px solid rgba(112, 112, 236, 0.867);
+    width:fit-content;
+}
+
+.basketball-card{
+    padding: 10px 12px;
+    border: 2px solid #eee;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

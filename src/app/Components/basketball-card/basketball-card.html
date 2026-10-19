@@ -1,0 +1,20 @@
+<div class="basketball-card">
+    <h1 id="ball-name">{{ballPlayer().name}}</h1>
+    @if(!expanded){
+        <p id="ball-pts">Points: {{ballPlayer().points}}</p>
+        <p id="ball-team">Team: {{ballPlayer().team}}</p>
+        <p id="ball-pos">Position: {{ballPlayer().position}}</p>
+    }    
+    <p id="ball-mvp">MVP: {{ballPlayer().mvpAward ? "Yes" : "No"}}</p>
+    <p id="ball-chip">Champion: {{ballPlayer().champion ? "Yes" : "No"}}</p>
+    <p id="ball-injr">Injured? {{ballPlayer().isInjured ? "Yes" : "No"}}</p>
+    <p id="ball-rook">Rookie? {{ballPlayer().isRookie ? "Yes" : "No"}}</p>
+    <button
+    id="remove-baller"
+    (click)="removeBaller($event)"
+    >Remove Baller</button>
+    <button
+    id="hide-stats"
+    (click)="hideStats($event)"
+    >Hide Stats</button>
+</div>

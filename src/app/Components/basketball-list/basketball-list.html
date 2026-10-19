@@ -1,0 +1,9 @@
+<h2 class="basket-title">Basketball Legends</h2>
+<div class="card-wrapper">
+    @for(ballPlayer of ballPlayerArray(); track ballPlayer.id){
+        <app-basketball-card
+        [ballPlayer]="ballPlayer"
+        (remove)="onBallerRemove($event)"
+        ></app-basketball-card>
+    }
+</div>

@@ -1,0 +1,39 @@
+.basketball-card{
+    padding: 10px 12px;
+    border: 2px solid #eee;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#remove-baller,
+#hide-stats{
+    border: 1px solid #7a342b;
+    background: #7a342b;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.625rem 0.875rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+      background-color 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease;
+}
+
+#hide-stats{
+    margin-top: 0.3rem;
+    border: 1px solid #0e530e;
+    background: #0e530e;
+}
